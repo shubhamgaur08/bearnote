@@ -1,16 +1,15 @@
 import React from 'react'
-import Navbar from "./Navbar";
 import '../styles/about.css';
 import awesome from '../images/about - awesome.jpeg'
 import login from '../images/about - awesome.svg'
 import { Link } from "react-router-dom";
-import { Button } from '@mui/material';
+
 // import Alertss from "./Alertss";
 
 function About() {
     return (
         <div>
-            {/* <Navbar /> */}
+            <img className="img-fluid" src="../images/logo.png" alt="BearNote"></img>
             {/* <Alertss /> */}
             <div className="text-white aboutImg text-center">
                 <div className="note-img">
@@ -26,9 +25,7 @@ function About() {
                         <p>BearNote is made from the pain of writing all the things in notebook which is very hectic :(, So we mad an online web platform where you can create, edit, upload, delete your notes/information privately and securely without any disturbancee.
                             you can also access your notes anywhere in your world, at anytime time . So dont forget to Create note because creating anything is always important
                         </p>
-                        {/* <div className="d-flex justify-content-center mt-3">
-                            <Button component={Link} to="/new" variant="contained" color="secondary" style={{ color: "White", textTransform: "none", fontFamily: "'Poppins', sans-serif", fontSize: "1.3rem" }}>Create New Note</Button>
-                        </div> */}
+                        
                     </div>
                     <div className="col-md-6">
                         <img className="img-fluid awesome" src={awesome} alt="about-awesome" />
@@ -45,9 +42,7 @@ function About() {
                             How we started? The concept was simple. BearNote was born from the pain of writing all the things in notebook which is very hectic :( .
                             An online web platform where you can create, edit, upload, delete your notes/information privately and securely without any disturbancee
                         </p>
-                        {/* <div className="d-flex justify-content-center mt-3">
-                            <Button component={Link} to="/register" variant="contained" color="secondary" style={{ color: "White", textTransform: "none", fontFamily: "'Poppins', sans-serif", fontSize: "1.3rem" }}>Sign up now</Button>
-                        </div> */}
+                        
                     </div>
                 </div>
             </div>
@@ -59,11 +54,11 @@ function About() {
                             <span className="logo_name"><span style={{ color: "#9C27B0" }}>B</span>earNote</span>
                         </div>
                         <div className="media-icons">
-                            <Link to="/"><i className="fab fa-facebook-f"></i></Link>
-                            <Link to="/"><i className="fab fa-twitter"></i></Link>
-                            <Link to="/"><i className="fab fa-instagram"></i></Link>
-                            <Link to="/"><i className="fab fa-linkedin-in"></i></Link>
-                            <Link to="/"><i className="fab fa-youtube"></i></Link>
+                            <Link to="https://www.facebook.com/shubhamg007" target="_blank"><i className="fab fa-facebook-f"></i></Link>
+                            <Link to="https://github.com/shubhamgaur08" target="_blank"><i className="fab fa-github"></i></Link>
+                            <Link to="/"><i className="fab fa-instagram" ></i></Link>
+                            <Link to="https://www.linkedin.com/in/shubham-gound-45b75715b/" target="_blank"><i className="fab fa-linkedin-in"></i></Link>
+                            <Link to="/"><i className="fab fa-youtube" target="_blank"></i></Link>
                         </div>
                     </div>
                     <div className="link-boxes">
@@ -82,15 +77,9 @@ function About() {
                         <ul className="box">
                             <li className="link_name">Account</li>
                             <li><Link to="/login">Sign-in</Link></li>
-                            <li><Link to="/register">Join Free</Link></li>
+                            <li><Link to="/signup">Join Free</Link></li>
                         </ul>
-                        <ul className="box">
-                            <li className="link_name">Top Categories</li>
-                            <li><Link to="/c/61554bfe801949ad7b9be4ff">Tent Notes</Link></li>
-                            <li><Link to="/c/61554c2753bcf306407cb1bd">RV and Van Notes</Link></li>
-                            <li><Link to="/c/61554c43d2a6b15f764aff36">Canoe Notes</Link></li>
-                            <li><Link to="c/61554c63dfd6a37d71449b5c">Survivalist Notes</Link></li>
-                        </ul>
+                       
                         <ul className="box input-box">
                             <li className="link_name">About BearNote</li>
                             <li style={{color: "#F7FFFF"}}>
